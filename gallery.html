@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuya Rhussell's Gallery</title>
+  <style>
+    :root {
+      --black: #010006;
+      --gray: #002A12;
+      --white: #F1F2ED;
+      --light-green: #A2AC82;
+      --dark-green: #022902;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #64846C;
+    }
+
+    header {
+      background: var(--black);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--gray);
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #f4f4f4;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
+
+    .gallery-item img,
+    .gallery-item iframe {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .description,
+    .caption {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 14px;
+      margin-top: 8px;
+      border-radius: 5px;
+    }
+
+    .gallery-item:hover .description {
+      opacity: 1;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kuya Rhussell's Gallery</h1>
+    <p>A Glimpse of Flavorful Memories</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Return to Home</a>
+  </nav>
+
+  <main>
+    <h2>Photo & Video Gallery</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="Fried-Rice-Hero-12.webp">
+        <div class="description">Kuya's Famous Fried Rice</div>
+      </div>
+      <div class="gallery-item">
+        <img src="download.webp">
+        <div class="description">Kuya's Burrito</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Adobo_DSCF4391.jpg">
+        <div class="description">Live Cooking Session</div>
+      </div>
+      <div class="gallery-item">
+        <img src="water_pour.jpg">
+        <div class="description">Magic water! (just regular water)</div>
+      </div>
+
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/CJauy8hpANQ" allowfullscreen></iframe>
+        <audio controls>
+          <source src="audio1.mp3" type="audio/mpeg">
+        </audio>
+        <div class="caption">Kuya's Fried Rice!</div>
+      </div>
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/lNsTxBRRJMw" allowfullscreen></iframe>
+        <audio controls>
+          <source src="audio2.mp3" type="audio/mpeg">
+        </audio>
+        <div class="caption">Borritto to go to</div>
+      </div>
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/e88qs6CsDs0" allowfullscreen></iframe>
+        <audio controls>
+          <source src="audio3.mp3" type="audio/mpeg">
+        </audio>
+        <div class="caption">Kuya's adobo</div>
+      </div>
+      <div class="gallery-item">
+        <iframe src="https://www.youtube.com/embed/KBI7ZqKHwKw" allowfullscreen></iframe>
+        <audio controls>
+          <source src="audio4.mp3" type="audio/mpeg">
+        </audio>
+        <div class="caption">Magiks Water</div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kuya's Blog. All rights reserved</p>
+  </footer>
+
+</body>
+</html>

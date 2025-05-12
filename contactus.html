@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Kuya Rhussell</title>
+  <style>
+    :root {
+      --black: #010006;
+      --gray: #002A12;
+      --white: #F1F2ED;
+      --light-green: #A2AC82;
+      --dark-green: #022902;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #64846C;
+    }
+
+    header {
+      background: var(--black);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--gray);
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    main {
+      margin: 70px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+      max-width: 800px;
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: var(--light-green);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #7c8e63;
+    }
+
+    .map-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Kuya Rhussell</h1>
+    <p>We would love to hear from you!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Return to Home</a>
+  </nav>
+
+  <main>
+    <h2>Send Us a Message</h2>
+
+    <form action="https://formspree.io/f/xwpoqpoz" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <hr />
+
+    <div class="map-section">
+      <h3>How to Get Here</h3>
+      <p>We're located at 900 San Marcelino St, Ermita, Manila:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.0137981635733!2d120.98375347508156!3d14.586234776154333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca208c903e9f%3A0x866d549cf2d6912!2s900%20San%20Marcelino%20St%2C%20Ermita%2C%20Manila%2C%201000%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1715250996796!5m2!1sen!2sph"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kuya's Blog. All rights reserved</p>
+  </footer>
+
+</body>
+</html>

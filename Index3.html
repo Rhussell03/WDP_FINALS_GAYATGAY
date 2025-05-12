@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Progress Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #444;
+            margin: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar img {
+            width: 80px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .sidebar h3, .sidebar p {
+            text-align: center;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .logout {
+            background: gray;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            color: whitesmoke
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: whitesmoke;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="453178253_471506465671661_2781666950760530985_n.png" alt="Profile">
+        <h3>Participant 036</h3>
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li>Account Profile</li>
+            <li>Current Favorite Recipes</li>
+            <li>Your recipes</li>
+            <li>Subscription</li>
+            <li>Extra Services</li>
+        </ul>
+        <div class="logout">Log Out</div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h2>Your Progress</h2>
+            <button style="background: #444; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Contact Support</button>
+        </div>
+        <div class="dashboard">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+        </div>
+    </div>
+</body>
+</html>
